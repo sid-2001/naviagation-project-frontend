@@ -19,14 +19,14 @@ function Home (){
   const [mapUrl, setMapUrl] = useState(true)
 
   // Using useEffect for single rendering
-  useEffect(() => {
-      // Using fetch to fetch the api from 
-      // flask server it will be redirected to proxy
-      axios.get("/data").then((res) =>{
-          setPoi(res.data.poi);
-      });
+  axios.get("http://3.218.162.252:5001/data", { 
+    headers: { 
+        'Access-Control-Allow-Origin': '*' 
+    } 
+}).then((res) => {
+    setPoi(res.data.poi);
+});
 
-  }, []);
 
   useEffect(() => {
       //do operation on state change

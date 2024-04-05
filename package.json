@@ -44,5 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://3.218.162.252:5001"
+  "proxy": {
+    "/api": "http: //3.218.162.252:5001"
+  }
 }
