@@ -7,7 +7,7 @@ import './Home.css'
 
 function Home (){
 
-	const [poi, setPoi] = useState([]);
+	const [poi, setPoi] = useState(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
 	const [src, setSrc] = useState('0');
   const [dest, setDest] = useState('0');
   const [path, setPath] = useState([]);
@@ -19,13 +19,14 @@ function Home (){
   const [mapUrl, setMapUrl] = useState(true)
 
   // Using useEffect for single rendering
-  axios.get("http://3.218.162.252:5001/data", { 
-    headers: { 
-        'Access-Control-Allow-Origin': '*' 
-    } 
-}).then((res) => {
-    setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
-});
+  useEffect()
+//   axios.get("http://3.218.162.252:5001/data", { 
+//     headers: { 
+//         'Access-Control-Allow-Origin': '*' 
+//     } 
+// }).then((res) => {
+//     setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
+// });
 
 
   useEffect(() => {
