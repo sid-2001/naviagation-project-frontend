@@ -19,7 +19,7 @@ function Home (){
   const [mapUrl, setMapUrl] = useState(true)
 
   // Using useEffect for single rendering
-  useEffect()
+
   axios.get("http://3.218.162.252:5001/data", { 
     headers: { 
         'Access-Control-Allow-Origin': '*' 
