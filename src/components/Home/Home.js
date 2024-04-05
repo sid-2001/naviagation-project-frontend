@@ -24,7 +24,7 @@ function Home (){
         'Access-Control-Allow-Origin': '*' 
     } 
 }).then((res) => {
-    setPoi(res.data.poi);
+    setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
 });
 
 
