@@ -22,7 +22,7 @@ function Home (){
   useEffect(() => {
       // Using fetch to fetch the api from 
       // flask server it will be redirected to proxy
-      axios.get("/data").then((res) =>{
+      axios.get("http://3.218.162.252:5001/data").then((res) =>{
           setPoi(res.data.poi);
       });
 
