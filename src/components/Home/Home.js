@@ -20,13 +20,9 @@ function Home (){
 
   // Using useEffect for single rendering
 
-  axios.get("http://3.218.162.252:5001/data", { 
-    headers: { 
-        'Access-Control-Allow-Origin': '*' 
-    } 
-}).then((res) => {
-    setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
-});
+//   axios.get("http://3.218.162.252:5001/data").then((res) => {
+//     setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"]);
+// });
 
 
   useEffect(() => {
