@@ -27,6 +27,7 @@ function Home (){
 
   useEffect(() => {
       //do operation on state change
+      setPoi(["Armonia","lift","washroom","staircase","Bombay Store","LG","Hitachi","Apple Service Centre","Haldiram Store","Uniqlo","Market 99","MAX","Home Centre","My Car"])
       if (showImage){
         var orgx = coords[1]-150
         var orgy = coords[0]-150
