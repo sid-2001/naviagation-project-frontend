@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "http://3.218.162.252:5001/:splat"
   status = 200
